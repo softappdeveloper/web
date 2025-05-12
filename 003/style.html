@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title><style>: The Style Information element</title>
+    <style>
+      body {
+        background-color: violet
+      }    
+
+      p {
+        background-color: gray
+      }    
+      b {
+        background-color: lightblue;
+        color: red;
+
+      }    
+      table, td {
+        background-color: white;
+        border: 1px solid red;
+      }     
+      thead {
+        background-color: green
+      }  
+      #popul {
+        background-color: red;
+      }   
+      .pop {
+        background-color: yellow;
+      }   
+
+    </style>
+
+  </head>
+  <body>
+<!--  <style>: The Style Information element 
+It is used to decorate, add feeling to some elements. it could be added via a specific file like css    -->
+    <p >Welcome to <b>App School</b></p>
+
+<table>
+     <thead>    <!-- <thead>: The Table Head element -->
+       <tr >     <!-- <tr>: The Table Row element -->
+         <th>Continent</th>
+         <th>Country</th>
+         <th>Capital</th>
+         <th>Populations</th>
+       </tr>
+     </thead>
+     <tr>
+       <td rowspan="4">Africa</td>	    <!-- <td>: The Table Data Cell element -->
+       <td>Cameroon</td>
+       <td>Yaounde</td>
+       <td class="pop">28.37M</td>
+     </tr>
+     <tr>
+       <td>Mali</td>
+       <td>Bamako</td>
+       <td id="popul">23.77M</td>
+     </tr>
+     <tr>
+       <td>Egypt</td>
+       <td>Cairo</td>
+       <td>25M</td>
+     </tr>
+     <tr>
+       <td>Nigeria</td>
+       <td>Abuja</td>
+       <td class="pop">227.9M</td>
+     </tr>
+     <tr>
+       <td>North America</td>
+       <td>Canada</td>
+       <td>Ottawa</td>
+       <td>40.1M</td>
+     </tr>
+     <tr>
+       <td>South America</td>
+       <td>Brazil</td>
+       <td>Brasilia</td>
+       <td>211.1M</td>
+     </tr>
+     <tr>
+       <td colspan="3">Highest Population</td>
+       <td>227.9M</td>
+     </tr>
+
+   </table>
+
+     </body> 
+</html>
