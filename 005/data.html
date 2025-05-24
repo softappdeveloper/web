@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>data tag example</title>
+        <style>
+            /*
+            data:hover::after {
+                content: " (Province " attr(value) ")";
+                font-size: 0.7em;
+            }*/
+            #list_id:hover::after {
+                content: " (Province " attr(value) ")";
+                font-size: 0.7em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <table>
+            <thead> 
+                <tr> 
+                    <th> Game 
+                    <th> Corporations 
+                    <th> Map Size
+            <tbody>
+                <tr> 
+                    <td> 1830 
+                    <td> <data value="8">Eight</data> 
+                    <td> <data value="93">19+74 hexes (93 total)</data>
+                <tr> 
+                    <td> 1856 
+                    <td> <data value="11">Eleven</data> 
+                    <td> <data value="99">12+87 hexes (99 total)</data>
+                <tr> 
+                    <td> 1870 
+                    <td> <data value="10">Ten</data> 
+                    <td> <data value="149">4+145 hexes (149 total)</data>
+        </table>
+
+        <hr>
+        
+        <table>
+            <thead> 
+                <tr> 
+                    <th> Game </th>
+                    <th> Corporations </th> 
+                    <th> Map Size </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td> 1830 </td> 
+                    <td> <data value="8">Eight</data> </td> 
+                    <td> <data value="93">19+74 hexes (93 total)</data> </td>
+                </tr>
+                <tr> 
+                    <td> 1856 </td> 
+                    <td> <data value="11">Eleven</data> </td> 
+                    <td> <data value="99">12+87 hexes (99 total)</data> </td>
+                </tr>
+                <tr> 
+                    <td> 1870 </td> 
+                    <td> <data value="10">Ten</data> </td> 
+                    <td> <data value="149">4+145 hexes (149 total)</data> </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <p>City</p>
+        <ul>
+            <li><data id="list_id" value="Centre">Yaounde</data></li>
+            <li><data id="list_id" value="Littoral">Douala</data></li>
+            <li><data id="list_id" value="West">Bafoussam</data></li>
+            <li><data id="list_id" value="South">Ebolowa</data></li>
+            <li><data id="list_id" value="Littoral">Nkongsamba</data></li>
+            <li><data id="list_id" value="North">Maroua</data></li>
+        </ul>
+        <hr>
+        <ruby>B<rt>annotation</ruby> <br>
+        <ruby>$<rt>Dollars</ruby> <br>
+        <ruby> 明日 <rt>Ashita </ruby>
+
+        <hr>
+        <ruby>
+            漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+        <hr>
+
+        <ruby>
+            ♥ <rt> Heart <rt lang=fr> | Cœur </rt>|||||
+            ☘ <rt> Shamrock <rt lang=fr>| Trèfle </rt>|||||
+            ✶ <rt> Star <rt lang=fr> Étoile| </rt>
+        </ruby>
+        <hr>
+
+        <p>
+            You can use <abbr>CSS</abbr> (Cascading Style Sheets) 
+            to style your <abbr>HTML</abbr> (HyperText Markup Language). 
+            Using style sheets, you can keep your <abbr>CSS</abbr> 
+            presentation layer and <abbr>HTML</abbr> content layer 
+            separate. This is called "separation of concerns."
+        </p>
+
+    </body>
+</html>
