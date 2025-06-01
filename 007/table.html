@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        section {
+            border: 1px, solid, orange;
+            padding: 5px;
+            margin: 3px;
+        }
+
+                
+        #sudoku { border-collapse: collapse; border: solid thick; }
+        #sudoku colgroup, table#sudoku tbody { border: solid medium; }
+        #sudoku td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
+        
+        #table_id_01 {
+            border: 1px solid tomato;
+        }
+        #table_id_02 {
+            border: 1px solid limegreen;
+        }
+        #table_id_03 {
+            border: 1px solid yellow;
+        }
+        #table_id_04 {
+            border: 1px solid blue;
+        }
+
+        th, td {
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h3>Table simple avec caption</h3>
+        <table id="table_id_01">
+            <caption>Characteristics with positive and 
+                negative sides</caption>
+            <thead>
+                <tr>
+                    <th>Negative</th>
+                    <th>Characteristic</th>
+                    <th>Positive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sad</td>
+                    <th>Mood</th>
+                    <td>Happy</td>
+                </tr>
+                <tr>
+                    <td>Failing</td>
+                    <th>Grade</th>
+                    <td>Passing</td>
+                </tr>
+            </tbody>
+        </table>        
+    </section>
+ 
+    <section>
+        <table id="table_id_02">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>2008</th>
+                    <th>2007</th>
+                    <th>2006</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <th>Net sales ($)</th>
+                    <td>32,479</td>
+                    <td>24,006</td>
+                    <td>19,315</td>
+                </tr>
+                <tr>
+                    <th>Cost of sales</th>
+                    <td>21,334</td>
+                    <td>15,852</td>
+                    <td>13,717</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>Gross margin ($)</th>
+                    <td>11,145</td>
+                    <td>8,154</td>
+                    <td>5,598</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Gross margin percentage</th>
+                    <td>34.3%</td>
+                    <td>34.0%</td>
+                    <td>29.0%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+ 
+    <section>
+        <table id="table_id_03">
+            <caption>Specification values: <b>Steel</b>, <b>Castings</b>,
+                Ann. A.S.T.M. A27-16, Class B;* P max. 0.06; 
+                S max. 0.05.</caption>
+            <thead>
+                <tr>
+                    <th rowspan=2>Grade.</th>
+                    <th colspan=2>Ultimate tensile strength</th>
+                    <th rowspan=2>Per cent reduct. area.</th>
+                </tr>
+                <tr>
+                    <th>kg/mm<sup>2</sup></th>
+                    <th>lb/in<sup>2</sup></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hard</td>
+                    <td>56.2</td>
+                    <td>80,000</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>49.2</td>
+                    <td>70,000</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Soft</td>
+                    <td>42.2</td>
+                    <td>60,000</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+ 
+    <section>
+        <table id="table_id_04">
+            <thead>
+                <tr> <th> ID <th> Measurement <th> Average <th> Maximum
+            <tbody>
+                <tr> <td> <th scope=rowgroup> Cats <td> <td>
+                <tr> <td> 93 <th> Legs <td> 3.5 <td> 4
+                <tr> <td> 10 <th> Tails <td> 1 <td> 1
+            <tbody>
+                <tr> <td> <th scope=rowgroup> English speakers <td> <td>
+                <tr> <td> 32 <th> Legs <td> 2.67 <td> 4
+                <tr> <td> 35 <th> Tails <td> 0.33 <td> 1
+        </table>
+    </section>
+
+    <section>
+        <h1>Today's Sudoku</h1>
+        <table id="sudoku">
+            <colgroup><col><col><col>
+            <colgroup><col><col><col>
+            <colgroup><col><col><col>
+            <tbody>
+                <tr> <td> 1 <td>   <td> 3 <td> 6 <td>   <td> 4 <td> 7 <td>   <td> 9
+                <tr> <td>   <td> 2 <td>   <td>   <td> 9 <td>   <td>   <td> 1 <td>
+                <tr> <td> 7 <td>   <td>   <td>   <td>   <td>   <td>   <td>   <td> 6
+            <tbody>
+                <tr> <td> 2 <td>   <td> 4 <td>   <td> 3 <td>   <td> 9 <td>   <td> 8
+                <tr> <td>   <td>   <td>   <td>   <td>   <td>   <td>   <td>   <td>
+                <tr> <td> 5 <td>   <td>   <td> 9 <td>   <td> 7 <td>   <td>   <td> 1
+            <tbody>
+                <tr> <td> 6 <td>   <td>   <td>   <td> 5 <td>   <td>   <td>   <td> 2
+                <tr> <td>   <td>   <td>   <td>   <td> 7 <td>   <td>   <td>   <td>
+                <tr> <td> 9 <td>   <td>   <td> 8 <td>   <td> 2 <td>   <td>   <td> 5
+        </table>
+    </section>
+
+</body>
+</html>

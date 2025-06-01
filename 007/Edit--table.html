@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit(ins/del) and table</title>
+    <style>
+        section {
+            border: 1px, solid, green;
+            padding: 5px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table>
+            <thead>
+                <tr> 
+                    <th> Game name </th>
+                    <th> Game publisher </th>
+                    <th> Verdict </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td> Diablo 2 </td>
+                    <td> Blizzard </td>
+                    <td> 8/10 </td>
+                </tr>
+                <tr> 
+                    <td> Portal </td>
+                    <td> Valve </td>
+                    <td> 10/10 </td>
+                </tr>
+                <tr> 
+                    <td> <ins>Portal 2</ins> </td> 
+                    <td> <ins>Valve</ins> </td>
+                    <td> <ins>10/10</ins> </td>
+                </tr>
+        </table>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr> 
+                    <th> Game name </th>
+                    <th> Game publisher </th>
+                    <th> <del cite="/edits/r192" datetime="2011-05-02 14:23Z">Verdict</del> </th>
+                </tr>
+            <tbody>
+                <tr> 
+                    <td> Diablo 2 </td>
+                    <td> Blizzard </td>
+                    <td> <del cite="/edits/r192" datetime="2011-05-02 14:23Z">8/10</del> </td>
+                </tr>
+                <tr> 
+                    <td> Portal </td>
+                    <td> Valve </td>
+                    <td> <del cite="/edits/r192" datetime="2011-05-02 14:23Z">10/10</del> </td>
+                </tr>
+                <tr> 
+                    <td> Portal 2 </td>
+                    <td> Valve </td>
+                    <td> <del cite="/edits/r192" datetime="2011-05-02 14:23Z">10/10</del> </td>
+                </tr>
+        </table>
+    </section>
+</body>
+</html>
