@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video balise</title>
+</head>
+<body>
+   
+    <p>Video (video locale)</p>
+    <video src="videos/flower.mp4" autoplay muted loop
+        width="250"
+        height="200"></video>
+        
+    <p>Video with many sources</p>
+    <video controls width="250" height="200">
+        <source src="videos/comedie.mp4" type="video/mp4" />
+        <source src="videos/flower.mp4" type="video/mp4" />
+
+        Failed to read video, please 
+        Download the <a href="videos/flower.webm">Flower</a>
+        or <a href="videos/comedie.mp4">Comedie</a> video.
+    </video>
+
+</body>
+</html>

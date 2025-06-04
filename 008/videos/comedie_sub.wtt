@@ -1,0 +1,18 @@
+WEBVTT
+
+NOTE This is a multi-line note block.
+These are used for comments by the author
+Two cue blocks are defined below.
+
+00:00.500 --> 00:03.000
+Le pere de Julien a 3 enfants.
+
+00:03.500 --> 00:05.000
+- Emilie,
+- Antoine, et?
+
+00:06.800 --> 00:07.800
+Cedric
+
+00:08.800 --> 00:10.800
+Mais papa, arrete, tu fais express ou quoi... 

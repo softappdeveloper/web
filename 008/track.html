@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>track balise</title>
+    <style>
+        audio {
+            width: 550px;
+            max-width: 600px; /* Example sizing */
+            height: 100px;
+            margin: 20px;
+            display: block; /* Ensures it takes its own line */
+            border: 1px solid tomato;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            height: 200px; /* Example: Give it a fixed height */
+            min-height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+   
+    
+    <br><br><br><br><br>
+    <section style="padding-bottom: 30px; border: 1px solid greenyellow;">
+        <p>audio with track</p>
+        <audio controls
+            src="audio/C_G-Mercyful-Ok__2.m4a" type="audio/mpeg">
+            <track kind="subtitles" src="audio/merciful_sub.wtt" srclang="en" default>
+            Your browser does not support the audio element.
+        </audio>
+
+    </section>
+
+    <p>Video with track</p>
+    <video controls width="550" height="200">
+        <track kind="subtitles" src="videos/comedie_sub.wtt" srclang="fr">
+        <source src="videos/comedie.mp4" type="video/mp4" />
+        Failed to read video, please 
+        Download the <a href="videos/comedie.mp4">Comedie</a> video.
+    </video>
+
+    
+    <p>Video with track</p>
+    <video controls width="550" height="200" src="videos/comedie.mp4" type="video/mp4">
+        <track kind="subtitles" src="videos/comedie_sub.wtt" srclang="fr">
+        <track kind="subtitles" src="videos/comedie_sub_en.wtt" srclang="en">
+        Failed to read video, please 
+        Download the <a href="videos/comedie.mp4">Comedie</a> video.
+    </video>
+</body>
+</html>
