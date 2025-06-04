@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit(ins/del) and Paragraph</title>
+    <style>
+        section {
+            border: 2px, solid, aqua;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <ins>
+            <p>
+                Nouvel insertion de ce paragraph.
+            </p>
+            Un autre paragraph donc la premi&egrave;re est inser&eacute;e 
+            au m&ecirc;me moment que le paragraph au dessus.
+        </ins>
+        Cette seconde phrase a toujours &eacute;t&eacute; pr&eacute;sente.
+    </section>
+    <br>
+    <section>
+        Voici le premier paragraph. <ins>Au premier paragraph, cette 
+        phrase est inser&eacute;e.
+        <p>Ce second paragraph est inser&eacute;.</p>
+        Cette phrase est aussi inser&eacute;.</ins> Dans cet exemple,
+        voici le 3ieme paragraph.
+        <!-- (don't do this) -->
+    </section>
+
+    <section>
+        <p>This is the first paragraph. 
+            <del>This sentence was deleted.</del>
+        </p>
+        <p>
+            <del>This sentence was deleted too.</del>
+            That sentence needed a separate &lt;del&gt; element.
+        </p>
+    </section>
+</body>
+</html>
