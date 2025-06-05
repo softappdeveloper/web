@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg balises</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .image-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: inline-block; /* To wrap around the image */
+            margin: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%; /* Ensures the image scales down if container is smaller */
+            height: auto;    /* Maintains aspect ratio */
+            display: block;  /* Removes extra space below the image */
+            margin: 0 auto;  /* Centers the image within its container */
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <br><br><h1>Displaying SVG using `&lt;img&gt;` tag</h1>
+
+    <p>This is a common and easy way to include SVGs. It treats the SVG like a raster image.</p>
+
+    <div class="image-container">
+        <h2>Example 1: Basic SVG</h2>
+        <img src="images/your-icon.svg" alt="A sample SVG icon">
+        <p>Source: <code>your-icon.svg</code></p>
+    </div>
+
+    <div class="image-container">
+        <h2>Example 2: Another SVG with explicit dimensions</h2>
+        <img src="images/another-drawing.svg" alt="A sample SVG drawing" width="200" height="200">
+        <p>Source: <code>another-drawing.svg</code> (width and height attributes)</p>
+    </div>
+
+    <div class="image-container">
+        <h2>Example 3: Responsive SVG with CSS</h2>
+        <img src="images/logo.svg" alt="A sample SVG logo" style="width: 150px; height: 150px;">
+        <p>Source: <code>logo.svg</code> (styled with CSS)</p>
+    </div>
+
+
+    <h2>How to use it:</h2>
+    <pre><code>&lt;img src="path/to/your-file.svg" alt="Description of the SVG"&gt;</code></pre>
+
+    <h3>Important Considerations:</h3>
+    <ul>
+        <li><strong>`src` attribute:</strong> Points to the path of your `.svg` file.</li>
+        <li><strong>`alt` attribute:</strong> Essential for accessibility. Provides alternative text for screen readers and when the image fails to load.</li>
+        <li><strong>Styling:</strong> You can control the `width` and `height` of the SVG using CSS on the `&lt;img&gt;` tag, just like with PNGs or JPEGs. However, you *cannot* style the internal elements of the SVG (like changing the color of a specific path) directly with CSS from your HTML file when it's embedded this way. For that, you'd need inline SVG or the `<object>` tag.</li>
+        <li><strong>JavaScript Interaction:</strong> You cannot interact with the internal elements of the SVG using JavaScript when embedded via `&lt;img&gt;`.</li>
+        <li><strong>Browser Caching:</strong> SVGs embedded this way benefit from browser caching like other image formats.</li>
+        <li><strong>External File:</strong> The SVG content resides in a separate file.</li>
+    </ul>
+
+    <p>Make sure you have `your-icon.svg`, `another-drawing.svg`, and `logo.svg` in the same directory as your HTML file for this example to work.</p>
+
+</body>
+</html>

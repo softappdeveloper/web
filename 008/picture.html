@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture balise</title>
+</head>
+<body>
+   
+    <picture>
+        <img src="images/nav_bg.png" alt="">
+    </picture>
+
+    <div>
+        <p>Header w201, 400, 801</p>
+        <picture>
+            <source srcset="images/Header1w201.png" media="(max-width: 400px)">
+            <source srcset="images/Header1w400.png" media="(max-width: 600px)">
+            <source srcset="images/Header1w801.png" media="(max-width: 900px)">
+            <img src="images/Header1.png" alt="">
+        </picture>
+    </div>
+</body>
+</html>
